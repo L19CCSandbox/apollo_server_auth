@@ -13,7 +13,27 @@ var models = [
     embedded: false
   },
   {
+    name: "Event_Image",
+    embedded: false
+  },
+  {
+    name: "Event_Url",
+    embedded: false
+  },
+  {
     name: "Location",
+    embedded: false
+  },
+  {
+    name: "Organization",
+    embedded: false
+  },
+  {
+    name: "Neighborhood",
+    embedded: false
+  },
+  {
+    name: "Geo_Json",
     embedded: false
   }
 ];
