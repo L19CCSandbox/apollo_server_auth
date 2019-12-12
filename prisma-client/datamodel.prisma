@@ -1,0 +1,26 @@
+type User {
+  id: ID! @id
+  name: String!
+  username: String! @unique
+  password: String!
+}
+
+type Event {
+  id: ID! @id
+  name: String!
+  description: String!
+  start: DateTime!
+  end: DateTime!
+}
+
+type Location {
+  id: ID! @id
+  name: String!
+  latitude: String
+  longitude: String
+  street_address: String!
+  city: String!
+  zipcode: Int!
+  state: String!
+  event_id: Event! @relation(link: INLINE, onDelete: CASCADE)
+}
